@@ -1,29 +1,54 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
 .rootLayout {
   padding: 16px 64px;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  max-width: 100%;
+}
 
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.rootLayout header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+}
 
-    .logo {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      gap: 8px;
+.rootLayout header .logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 8px;
+}
 
-      img {
-        width: 32px;
-        height: 32px;
-      }
-    }
+.rootLayout header .logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.rootLayout main {
+  flex: 1;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .rootLayout {
+    padding: 16px 32px;
   }
+}
 
-  main {
-    flex: 1;
-    overflow: hidden;
+@media (max-width: 480px) {
+  .rootLayout {
+    padding: 16px 16px;
   }
 }

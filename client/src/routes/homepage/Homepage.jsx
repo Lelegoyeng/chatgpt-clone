@@ -37,22 +37,32 @@ const Homepage = () => {
             />
             <TypeAnimation
               sequence={[
-                "Manusia: Kami memproduksi makanan untuk Tikus",
+                "Manusia: Apa manfaat AI untuk kehidupan sehari-hari?",
                 2000,
                 () => {
                   setTypingStatus("bot");
                 },
-                "Bot: Kami memproduksi makanan untuk Hamster",
+                "Bot: AI membantu Anda bekerja lebih efisien dengan otomatisasi.",
                 2000,
                 () => {
                   setTypingStatus("human2");
                 },
-                "Manusia2: Kami memproduksi makanan untuk Marmut",
+                "Manusia2: Bagaimana AI dapat membantu saya belajar?",
                 2000,
                 () => {
                   setTypingStatus("bot");
                 },
-                "Bot: Kami memproduksi makanan untuk Chinchilla",
+                "Bot: AI menyediakan materi belajar yang dipersonalisasi dan interaktif.",
+                2000,
+                () => {
+                  setTypingStatus("human1");
+                },
+                "Manusia: Apa masa depan AI?",
+                2000,
+                () => {
+                  setTypingStatus("bot");
+                },
+                "Bot: Masa depan AI adalah kolaborasi antara manusia dan mesin untuk menciptakan inovasi.",
                 2000,
                 () => {
                   setTypingStatus("human1");

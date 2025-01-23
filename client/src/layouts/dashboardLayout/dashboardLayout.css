@@ -3,13 +3,46 @@
   gap: 50px;
   padding-top: 20px;
   height: 100%;
+}
 
-  .menu {
-    flex: 1;
+.dashboardLayout .menu {
+  flex: 1;
+}
+
+.dashboardLayout .content {
+  flex: 4;
+  background-color: #12101b;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .dashboardLayout {
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .content {
-    flex: 4;
-    background-color: #12101b;
+  .dashboardLayout .menu {
+    order: 2;
+  }
+
+  .dashboardLayout .content {
+    order: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboardLayout {
+    padding-top: 10px;
+    gap: 10px;
+  }
+
+  .dashboardLayout .menu {
+    flex: none;
+    width: 100%;
+  }
+
+  .dashboardLayout .content {
+    flex: none;
+    width: 100%;
   }
 }

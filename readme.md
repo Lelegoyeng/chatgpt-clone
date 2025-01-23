@@ -11,14 +11,12 @@
 ### Overview
 
 <div style="float: right;">
-    <img src="https://github.com/Lelegoyeng/chatgpt-clone/blob/main/etc/screenshot1.png" 
-         alt="Gambar2" 
-         width="300" 
-         height="200">
+    <img src="https://github.com/Lelegoyeng/chatgpt-clone/blob/main/etc/screenshot.png" 
+         alt="screenshot" 
+         width="760" >
 </div>
 <div style="float: right;">
-    <img src="https://github.com/Lelegoyeng/chatgpt-clone/blob/main/etc/screenshot2.png" 
-         alt="Gambar3" 
-         width="300" 
-         height="200">
+    <img src="https://github.com/Lelegoyeng/chatgpt-clone/blob/main/etc/screenshot1.png" 
+         alt="screenshot1" 
+         width="760" >
 </div>

@@ -11,12 +11,12 @@ const Homepage = () => {
       <img src="/orbital.png" alt="" className="orbital" />
       <div className="left">
         <h1>Lele AI</h1>
-        <h2>Supercharge your creativity and productivity</h2>
+        <h2>Tingkatkan kreativitas dan produktivitas Anda</h2>
         <h3>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat sint
-          dolorem doloribus, architecto dolor.
+          Temukan cara baru untuk menyelesaikan pekerjaan Anda dengan cepat dan
+          efisien. Lele AI siap membantu Anda.
         </h3>
-        <Link to="/dashboard">Get Started</Link>
+        <Link to="/dashboard">Mulai Sekarang</Link>
       </div>
       <div className="right">
         <div className="imgContainer">
@@ -37,23 +37,22 @@ const Homepage = () => {
             />
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
-                "Human:We produce food for Mice",
+                "Manusia: Kami memproduksi makanan untuk Tikus",
                 2000,
                 () => {
                   setTypingStatus("bot");
                 },
-                "Bot:We produce food for Hamsters",
+                "Bot: Kami memproduksi makanan untuk Hamster",
                 2000,
                 () => {
                   setTypingStatus("human2");
                 },
-                "Human2:We produce food for Guinea Pigs",
+                "Manusia2: Kami memproduksi makanan untuk Marmut",
                 2000,
                 () => {
                   setTypingStatus("bot");
                 },
-                "Bot:We produce food for Chinchillas",
+                "Bot: Kami memproduksi makanan untuk Chinchilla",
                 2000,
                 () => {
                   setTypingStatus("human1");
@@ -70,9 +69,9 @@ const Homepage = () => {
       <div className="terms">
         <img src="/logo.png" alt="" />
         <div className="links">
-          <Link to="/">Terms of Service</Link>
+          <Link to="/">Syarat dan Ketentuan</Link>
           <span>|</span>
-          <Link to="/">Privacy Policy</Link>
+          <Link to="/">Kebijakan Privasi</Link>
         </div>
       </div>
     </div>

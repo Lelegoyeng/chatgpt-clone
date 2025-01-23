@@ -3,10 +3,9 @@ import "./dashboardPage.css";
 import { useNavigate } from "react-router-dom";
 
 const DashboardPage = () => {
-  const queryClient = useQueryClient();
-
   const navigate = useNavigate();
 
+  const queryClient = useQueryClient();
   const mutation = useMutation({
     mutationFn: (text) => {
       return fetch(`${import.meta.env.VITE_API_URL}/api/chats`, {
@@ -19,7 +18,6 @@ const DashboardPage = () => {
       }).then((res) => res.json());
     },
     onSuccess: (id) => {
-      // Invalidate and refetch
       queryClient.invalidateQueries({ queryKey: ["userChats"] });
       navigate(`/dashboard/chats/${id}`);
     },
@@ -37,7 +35,7 @@ const DashboardPage = () => {
       <div className="texts">
         <div className="logo">
           <img src="/logo.png" alt="" />
-          <h1>LAMA AI</h1>
+          <h1>Lele AI</h1>
         </div>
         <div className="options">
           <div className="option">
